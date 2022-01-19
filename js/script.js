@@ -3,7 +3,7 @@ let format_price;
 let tooping_price ;
 let total = 0
 
-function GetPizza (name,size,format,topping,total){
+function GetMovie (name,size,format,topping,total){
     this.name = name;
     this.size = size;
     this.format= format;
@@ -57,7 +57,7 @@ function GetPizza (name,size,format,topping,total){
         $("button.proceed").show();
         $("#information").show();
         $("div.choice").hide();
-        alert("Please select the Pizza size and format");
+        alert("Please select the Movie size and format");
       }
       else {
     
@@ -70,13 +70,13 @@ function GetPizza (name,size,format,topping,total){
       let checkoutTotal = 0;
       checkoutTotal = checkoutTotal + total;
 
-      $("#pizzaname").html($(".name option:selected").val());
-      $("#pizzasize").html( $("#size option:selected").val());
-      $("#pizzaformat").html($("#format option:selected").val());
-      $("#pizzatopping").html(pTopping.join(", "));
+      $("#Moviename").html($(".name option:selected").val());
+      $("#Moviesize").html( $("#size option:selected").val());
+      $("#Movieformat").html($("#format option:selected").val());
+      $("#Movietopping").html(pTopping.join(", "));
       $("#totals").html(total);
 
-      $("button.addPizza").click(function(){
+      $("button.addMovie").click(function(){
         let pName = $(".name option:selected").val();
         let pFormat = $("#size option:selected").val();
         let pTrending = $("#format option:selected").val();
@@ -119,23 +119,23 @@ function GetPizza (name,size,format,topping,total){
     checkoutTotal = checkoutTotal + total;
    
 
-    newOrder = new GetPizza(pName,pFormat,pTrending,pTopping,total);
-    $("#ordersmade").append(`<tr><td id="pizzaname">`+newOrder.name +`</td><td id="pizzasize"> `+ newOrder.size +`</td><td id="pizzasize"> `+ newOrder.format +`</td><td id="pizzasize"> `+ newOrder.topping +`</td><td id="pizzasize"> `+ newOrder.total +`</td></tr>`);
+    newOrder = new GetMovie(pName,pFormat,pTrending,pTopping,total);
+    $("#ordersmade").append(`<tr><td id="Moviename">`+newOrder.name +`</td><td id="Moviesize"> `+ newOrder.size +`</td><td id="Moviesize"> `+ newOrder.format +`</td><td id="Moviesize"> `+ newOrder.topping +`</td><td id="Moviesize"> `+ newOrder.total +`</td></tr>`);
   })
 
   $("button#checkout").click(function(){
     $("button#checkout").hide();
-    $("button.addPizza").hide();
+    $("button.addMovie").hide();
     $("button#deliver").slideDown(1000);
-    $("#pizzatotal").append("Your bill is ksh. " +  checkoutTotal);
+    $("#Movietotal").append("Your bill is ksh. " +  checkoutTotal);
   })
   $("button.deliver").click(function(){
-    $(".pizzatable").hide();
+    $(".Movietable").hide();
     $(".choice h2").hide();
     $(".delivery").slideDown(1000);
     $("#addedprice").hide();
     $("button.deliver").hide();
-    $("#pizzatotal").hide();
+    $("#Movietotal").hide();
 
     let deliveryAmount = checkoutTotal + 150;
     $("#totalbill").append("Your bill plus delivery fee is: "+ deliveryAmount);
@@ -143,7 +143,7 @@ function GetPizza (name,size,format,topping,total){
 
   $("button#final-order").click(function(event){
     event.preventDefault();
-    $("#pizzatotal").hide();
+    $("#Movietotal").hide();
     $(".delivery").hide();
     $("button#final-order").hide();
     let deliceryAmount = checkoutTotal+ 150;
