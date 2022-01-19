@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  height: 100vh;
+}
+.video-background {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  right: 0;
+  bottom: 0;
+  /* background-color: lightblue; */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  height: 100vh; /*to set the viewport heiht to 100*/
+  z-index: -1; /*to make the title come on top of the video. An element with greater stack order
+                is always in front of an element with a lower stack order. z-index only works on positioned
+                elements (position: absolute, position: relative, position: fixed, or position: sticky)*/
+    opacity: 0.9; /*to set how  transparent the background video is*/
+  background: rgba(0, 0, 0, 0.9); /*to set the background transparency*/
+}
+.welcome-message{
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff; /*to set the color of the letters inside the button*/
+  top: 250px; /*to set the distance of the welcome message from the top*/
+}
+.welcome-message h1 {
+  font-size: 30px; /*to set the font-size of the letters inside the button*/
+  font-weight: bold; /*to set the boldness of the letters inside the button*/
+  letter-spacing: 1px; /*distance between the letters of the words inside the icons*/
+  margin-bottom: 30px; /*to set the location of the buttons....reverse distance from the bottom*/
+}
+.btn{
+  font-size: 18px; /*font size of the words inside the icons*/
+  color: #fff; /*to set the color of the letters inside the button*/
+  margin: 5px; /*to set the distance between the buttons*/
+  padding: 7px 42px; /*to size the buttons
+                      7px -- to set the width of the buttons
+                      42px to set the width*/
+  text-decoration: none;
+  border: 2px solid coral; /*to create the color of the buttons borders
+                            2px sets the border-size of the icons,
+                            solid-to make the line continuous, if you want it dotted, use "dashed",
+                            coral - to set the color of the borders*/
+  border-radius: 25px;    /*to make the icons have a circular effect*/
+}
+#subscribe:hover {    /*to create a hover effect on the buttons*/
+  background: coral;  /*to create a yellow-hover effect on the buttons*/
+  transition: .1s;  /*to create a hover effect time on the buttons*/
+}
+#download:hover {    /*to create a hover effect on the buttons*/
+  background: coral;  /*to create a yellow-hover effect on the buttons*/
+  transition: .1s; /*to create a hover effect time on the buttons*/
+}
+
+
+
+
+/* media-queries to set the page viewable on phones and tablets.... */
+
+@media (min-aspect-ratio: 16/9) {
+  .video-background{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-background{
+    width: auto;
+    height: 100%;
+  }
+}
