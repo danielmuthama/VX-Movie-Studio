@@ -28,7 +28,7 @@
                             <a class="nav-link" href="#overlay-home">Home</a>
                           </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#product">gallery</a>
+                            <a class="nav-link" href="#product">Gallery</a>
                           </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#order">Order</a>
@@ -71,7 +71,7 @@
               <div class="carousel-item active">
                 <div class="col-md-4">
                   <div class="card mb-2">
-                    <img class="card-img-top" src="./asset/1.jpg" alt="Pizza Image 1">
+                    <img class="card-img-top" src="./asset/1.jpg" alt="">
                     <div class="card-body">
                       <h5 class="card-title">1</h5>
                     </div>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="card mb-2">
-                      <img class="card-img-top" src="./asset/4.jpg" alt="Pizza Image 2">
+                      <img class="card-img-top" src="./asset/4.jpg" alt="">
                       <div class="card-body">
                         <h5 class="card-title"> 2</h5>
                       </div>
@@ -88,7 +88,7 @@
 
                 <div class="col-md-4">
                     <div class="card mb-2">
-                      <img class="card-img-top" src="./asset/5.jpg" alt="Pizza Image 3">
+                      <img class="card-img-top" src="./asset/5.jpg" alt="">
                       <div class="card-body">
                         <h5 class="card-title">3</h5>
                       </div>
@@ -98,7 +98,7 @@
                 <div class="carousel-item">
                     <div class="col-md-4">
                       <div class="card mb-2">
-                        <img class="card-img-top" src="./asset/4.jpg" alt="Pizza Image 4">
+                        <img class="card-img-top" src="./asset/4.jpg" alt="">
                         <div class="card-body">
                           <h5 class="card-title">4</h5>
                         </div>
@@ -106,7 +106,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-2">
-                          <img class="card-img-top" src="./asset/5.jpg" alt="Pizza Image 5">
+                          <img class="card-img-top" src="./asset/5.jpg" alt="">
                           <div class="card-body">
                             <h5 class="card-title">5</h5>
                           </div>
@@ -114,7 +114,7 @@
                       </div>
                       <div class="col-md-4">
                         <div class="card mb-2">
-                          <img class="card-img-top" src="./asset/6.jpg" alt="Pizza Image 6">
+                          <img class="card-img-top" src="./asset/6.jpg" alt="">
                           <div class="card-body">
                             <h5 class="card-title"> 6</h5>
                           </div>
@@ -127,91 +127,112 @@
             
 
 
-      <div class="container-fluid order" id="order">
-        <div class="order-overlay">
-          <div class="controls-top text-center" id="Order-now"> 
-            <h4><strong>ORDER NOW</strong></h4>
-          </div>
+                    <div class="container-fluid order" id="order">
+                    <div class="order-overlay">
+                      <div class="controls-top text-center" id="Order-now"> 
+                        <h4><strong>ORDER NOW</strong></h4>
+                      </div>
+            
+                      <div class="row">
+                        <div class="col-sm-5">
+                          <form action="">
+                              <label for="select">Choose Your Favourite Movie</label>
+                              <select class="browser-default custom-select custom-select-md mb-3 name" id="name">
+                                <option selected value="0">Choose your favourite movie</option>
+                                <option value="Ondine">Ondine</option>
+                                <option value="The Woman">The Woman</option>
+                                <option value="Icarus">Icarus</option>
+                                <option value="Grind">Monster</option>
+                                <option value="Unthinkable">Unthinkable</option>
+                                <option value="Ninja">Ninja</option>
+                              </select>
+                            <label for="select">Select The Format</label>
+                            <select class="browser-default custom-select custom-select-md mb-3" id="size">
+                              <option selected value="0">Choose your favourite Format</option>
+                              <option value="mp4">MP4. -- sh. 1200</option>
+                              <option value="mov">MOV. -- sh. 900</option>
+                              <option value="wmv">WMV. -- sh. 600</option>
+                            </select>
+                            <label for="format">Select The Trending discount</label>
+                              <select class="browser-default custom-select custom-select-md mb-3" id="format">
+                                <option selected value="0">Trendings This Week</option>
+                                <option value="Ondine">Ondine at sh. 200</option>
+                                <option value="Grind">Grind at sh. 100</option>
+                                <option value="The Woman">The Woman at sh. 50</option>
 
-          <div class="row">
-            <div class="col-sm-5">
-              <form action="">
-                  <label for="select">Choose a genre</label>
-                  <select class="browser-default custom-select custom-select-md mb-3 name" id="name">
-                    <option value="Choco Pizza"></option>
-                    <option value="Greek Pizza"></option>
-                    <option value="Neapolitan Pizza"></option>
-                    <option value="Iranian Pizza"></option>
-                    <option value="York-style Pizza"></option>
-                    <option value="Spaghetti Pizza"></option>
-                  </select>
-                <label for="select">Select a movie</label>
-                <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                  <option selected value="0">Choose a movie</option>
-                  <option value="large"></option>
-                  <option value="medium"></option>
-                  <option value="small"></option>
-                </select>
-                <label for="crust">trending</label>
-                  <select class="browser-default custom-select custom-select-md mb-3" id="crust">
-                    <option selected value="0"></option>
-                    <option value="Crispy"></option>
-                    <option value="Stuffed"></option>
-                    <option value="Gluten-free"></option>
-                    <option value="Flatbread"></option>
-                    <option value="Focaccia"></option>
-                  </select>
-         
-            <div class="col-sm-7">
-              <div id="information">
-                  <h1 class="h6-reponsive white-text text-lowercase pulse">Amount ==?</h6>
-              </div>
-              <div class="choice">
-                <h2>Your Order is:</h2>
-                <div id="your-orders">
-                  <table class="table table-sm  pizzatable">
-                    <thead>
-                      <tr>
-                        <th scope="col">Name</th>
-                        <th scope="col">Size</th>
-                        <th scope="col">type</th>
-                        <th scope="col">genre</th>
-                        <th scope="col">Total</th>
-                      </tr>
-                    </thead>
-                    <tbody id="ordersmade">
-                      <tr>
-                        <td id="pizzaname"></td>
-                        <td id="pizzasize"></td>
-                        <td id="pizzacrust"></td>
-                        <td id="pizzatopping"></td>
-                        <td id="totals"></td>
-                      </tr>                  
-                    </tbody>
-                  </table>
-                  <p id="pizzatotal"></p>
-                  <p id="totalbill"></p> 
-                  <p id="addedprice">tax</p>
-                  <p id="finallmessage"></p>
-                </div>
-                <button class="btn btn-secondary  bg-secondary addPizza">Add a movie</button>
-                <button class="btn btn-secondary bg-secondary " id="checkout">discount</button>
-                <button class="btn btn-secondary deliver bg-secondary ">checkout</button>
-              </div>
-              <div class="delivery"> 
-                  <form action="" id="form">
-                    <div class="form-group">
-                      <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                      <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
-                      <input type="text" id="location" class="form-control mb-3" placeholder="Location">
-                      <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Order</button>
+                              </select>
+                            <label for="Toppings">Tax at.. ksh 50 <span style="color: red">"only jkmk available in your area"</span></label><br>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="kfb" value="kfb" name="toppings">
+                                <label class="custom-control-label" for="kfb">KFB</label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="Universal" value="universal" name="toppings">
+                                <label class="custom-control-label" for="universal">Universal</label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                  <input type="checkbox" class="custom-control-input" id="jkmk" value="jkmk" name="toppings">
+                                  <label class="custom-control-label" for="jkmk">JKMK</label>
+                              </div>
+                              <div class="custom-control custom-checkbox custom-control-inline">
+                                  <input type="checkbox" class="custom-control-input" id="lmkn " value="lmkn" name="toppings">
+                                  <label class="custom-control-label" for="lmkn">LMKN</label>
+                                </div>
+
+                            <button type="submit" class="btn btn-secondary bg-secondary proceed">Continue</button>
+                            <button onClick="window.location.reload();" onclick="style.display = 'none'">Refresh</button>
+            
+                          </form>
+                        </div>
+                        <div class="col-sm-7">
+                          <div id="information">
+                              <h1 class="h6-reponsive white-text text-lowercase pulse">Amount ==?</h6>
+                          </div>
+                          <div class="choice">
+                            <h2>Your Order is:</h2>
+                            <div id="your-orders">
+                              <table class="table table-sm  pizzatable">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Format</th>
+                                    <th scope="col">Preview-Discount</th>
+                                    <th scope="col">Tax</th>
+                                    <th scope="col">Total</th>
+                                  </tr>
+                                </thead>
+                                <tbody id="ordersmade">
+                                  <tr>
+                                    <td id="pizzaname"></td>
+                                    <td id="pizzasize"></td>
+                                    <td id="pizzaformat"></td>
+                                    <td id="pizzatopping"></td>
+                                    <td id="totals"></td>
+                                  </tr>                  
+                                </tbody>
+                              </table>
+                              <p id="pizzatotal"></p>
+                              <p id="totalbill"></p> 
+                              <p id="addedprice">Streaming will cost additional 200</p>
+                              <p id="finallmessage"></p>
+                            </div>
+                            <button class="btn btn-secondary  bg-secondary addPizza">Add Movie</button>
+                            <button class="btn btn-secondary bg-secondary " id="checkout">Checkout</button>
+                            <button class="btn btn-secondary deliver bg-secondary ">Your Details</button>
+                          </div>
+                          <div class="delivery"> 
+                              <form action="" id="form">
+                                <div class="form-group">
+                                  <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                                  <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                                  <input type="text" id="location" class="form-control mb-3" placeholder="Location">
+                                  <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Order</button>
+                                </div>
+                              </form>
+                          </div>
+                        </div>
                     </div>
-                  </form>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
+                  </div>
 
 
 
