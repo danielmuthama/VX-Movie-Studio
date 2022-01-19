@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: 'border-border-box';
+}
+.hero {
+  width: 100%;
+  height: 100vh;          /*height set using vh*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), #3551b5), url(../background.jpg); /*Code to create background image, transparency of the image*/
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;            /*code to set content at the center*/
+  font-family: 'Oswald', sans-serif;
+}
+form {
+  width: 90%;
+  max-width: 600px;
+}
+.input-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;
+}
+.user {
+width: 100px;    /*to set the size of the user image*/
+height: 100px;  /*to set the size of the user image*/
+border-radius: 50%; /*to set the user image from box into a circle*/
+position: absolute;
+top: -110px;  /*To set the user image out of the login box by half, that's why it's negative value*/
+left: calc(100% - 30px);
+}
+.paragraph {
+  width: 20%;
+  padding: 10px;
+  outline: 0;
+  border: 5px solid #9C9897;
+  color: ##270A03;
+  background: transparent;
+  font-size: 10px;
+  font-family: 'Oswald', sans-serif;
+  height: 50vh;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+    font-size: 15px;
+    line-height: 25px;
+}
+label {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: #fff;
+  cursor: text;
+  transition: 0.9s;       /*this code was added later to make the name inside the boxes move upwards when someone clicks the to type*/
+}
+#button {
+  padding: 10px 0;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  cursor: pointer;
+}
+input:focus~label,   /*this code is here to make the name inside the boxes move upwards when someone clicks the to type*/
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+  top: -35px;
+  font-size: 14px;
+}
+.row{                         /*code to separate the name
+                               and email boxes but to remain in the same row. Have
+                               put them first in the same div with class row*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.row .input-group {           /*Code to allocate space between name and email boxes set above*/
+  flex-basis: 46%;
+}
