@@ -43,11 +43,11 @@ function GetMovie (name,size,format,topping,total){
         c_price = 0;
          break;
         case "Ondine":
-        c_price = 400;
+        c_price = 40;
         case "Grind":
-        c_price = 400; 
+        c_price = 40; 
         case "The Woman":
-        c_price = 400;
+        c_price = 40;
         default:
         console.log("error");
 }
@@ -102,11 +102,11 @@ function GetMovie (name,size,format,topping,total){
              c_price = 0;
               break;
              case "Ondine":
-             c_price = 400;
+             c_price = 40;
              case "Grind":
-             c_price = 400; 
+             c_price = 40; 
              case "The Woman":
-             c_price = 400;
+             c_price = 40;
              default:
              console.log("error");
     }
@@ -153,7 +153,7 @@ function GetMovie (name,size,format,topping,total){
     let location = $("input#location").val();
 
     if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
-      $("#finallmessage").append(person+", We have received your request will send to  "+location+ " ASAP. Please ensure you pay ksh. "+ deliceryAmount);
+      $("#finallmessage").append(person+", We have received your request we will send the feedback at  "+location+ " ASAP. Please ensure you pay ksh. "+ deliceryAmount);
       $("#totalbill").hide();
       $("#finallmessage").slideDown(1200); 
     }else{
