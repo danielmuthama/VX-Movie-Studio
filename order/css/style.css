@@ -10,7 +10,6 @@ html,body,header,
 }
 
 #overlay-home{
-    background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -33,9 +32,6 @@ h1{
     font-size: 60px;
     text-shadow: 2px 4px 5px yellow;
 }
-#collapsibleNavbar {
-  background-color: crimson;
-}
 nav .navbar{
     width: 99%;
     padding-right: 0px;
@@ -48,6 +44,7 @@ nav .navbar{
   .nav-item a{
     font-size: 20px;
     font-weight: 700;
+    color: turquoise;
 }
 .landing{
     background-image: url("../asset/bg-home.jpg");
@@ -62,6 +59,8 @@ nav .navbar{
 .text a{
     font-size: 20px;
     font-weight: 700;
+    color: white;
+
 }
 .text h5{
     font-size: 25px;
@@ -194,7 +193,6 @@ button {
     margin-left:-20px;
     
   }
-  
   .bounce {
     animation: bounce 3s infinite;
   }
@@ -208,11 +206,13 @@ button {
      padding-top: 3%;
     color: white;
    }
+
   .map{
     height: 350px;
     margin: 4%;
 
   }
+
   #icon {
     position: absolute;
     top: 50%;
@@ -223,6 +223,7 @@ button {
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
+
 @-moz-keyframes spin { 
     100% { -moz-transform: rotate(360deg); } 
 }
