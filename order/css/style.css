@@ -40,11 +40,14 @@ nav .navbar{
   .navbar-brand{
     margin-right: 30%;
     font-weight:800;
-  }
+  } white
   .nav-item a{
     font-size: 20px;
     font-weight: 700;
-    color: turquoise;
+
+}
+.nav-link {
+  color: white;
 }
 .landing{
     background-image: url("../asset/bg-home.jpg");
@@ -236,4 +239,5 @@ button {
         transform:rotate(360deg); 
     } 
 }
+
   
