@@ -137,7 +137,7 @@ function GetMovie (name,size,format,topping,total){
     $("button.deliver").hide();
     $("#Movietotal").hide();
 
-    let deliveryAmount = checkoutTotal + 150;
+    let deliveryAmount = checkoutTotal;
     $("#totalbill").append("Your bill plus delivery fee is: "+ deliveryAmount);
   })
 
@@ -146,7 +146,7 @@ function GetMovie (name,size,format,topping,total){
     $("#Movietotal").hide();
     $(".delivery").hide();
     $("button#final-order").hide();
-    let deliceryAmount = checkoutTotal+ 150;
+    let deliceryAmount = checkoutTotal;
 
     let person = $("input#name").val();
     let phone = $("input#phone").val();
