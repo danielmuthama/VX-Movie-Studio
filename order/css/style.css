@@ -50,7 +50,7 @@ nav .navbar{
     font-weight: 700;
 }
 .landing{
-    background-image: url("../asset/bg.jpg");
+    background-image: url("../asset/bg-home.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
