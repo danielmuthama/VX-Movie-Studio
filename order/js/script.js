@@ -61,7 +61,7 @@ function GetMovie (name,size,format,topping,total){
       }
       else {
     
-        $("button.proceed").hide();
+        $("button.proceed").show();
         $("#information").hide();
         $("div.choice").slideDown(1200);
       }
@@ -75,53 +75,6 @@ function GetMovie (name,size,format,topping,total){
       $("#Movieformat").html($("#format option:selected").val());
       $("#Movietopping").html(pTopping.join(", "));
       $("#totals").html(total);
-
-      $("button.addMovie").click(function(){
-        let pName = $(".name option:selected").val();
-        let pFormat = $("#size option:selected").val();
-        let pTrending = $("#format option:selected").val();
-        let pTopping = []; 
-    
-        switch(pFormat){
-            case "0":
-              price= 0;
-              break;
-            case 'mp4':
-              price = 1200;
-              break;
-            case "mov":
-              price = 900;
-              break;
-            case "wmv":
-              price = 600;
-            default:
-        }
-              
-        switch(pTrending){
-             case "0":
-             c_price = 0;
-              break;
-             case "Ondine":
-             c_price = 40;
-             case "Grind":
-             c_price = 40; 
-             case "The Woman":
-             c_price = 40;
-             default:
-             console.log("error");
-    }
-    
-
-    let topping_value = pTopping.length * 100;
-    total = price + c_price + topping_value;
-
-
-    checkoutTotal = checkoutTotal + total;
-   
-
-    newOrder = new GetMovie(pName,pFormat,pTrending,pTopping,total);
-    $("#ordersmade").append(`<tr><td id="Moviename">`+newOrder.name +`</td><td id="Moviesize"> `+ newOrder.size +`</td><td id="Moviesize"> `+ newOrder.format +`</td><td id="Moviesize"> `+ newOrder.topping +`</td><td id="Moviesize"> `+ newOrder.total +`</td></tr>`);
-  })
 
   $("button#checkout").click(function(){
     $("button#checkout").hide();
