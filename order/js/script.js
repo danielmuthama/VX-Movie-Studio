@@ -3,11 +3,11 @@ let format_price;
 let tooping_price ;
 let total = 0
 
-function GetMovie (name,size,format,topping,total){
+function GetMovie (name,size,format,reg,total){
     this.name = name;
     this.size = size;
     this.format= format;
-    this.topping = topping;
+    this.reg = reg;
     this.total = total;
   };
   $(document).ready(function(){
@@ -16,10 +16,10 @@ function GetMovie (name,size,format,topping,total){
       let pName = $(".name option:selected").val();
       let pFormat = $("#size option:selected").val();
       let pTrending = $("#format option:selected").val();
-      let pTopping = [];
+      let preg = [];
   
-      $.each($("input[name='toppings']:checked"),function(){
-        pTopping.push($(this).val());
+      $.each($("input[name='regs']:checked"),function(){
+        preg.push($(this).val());
       })
 
       switch(pFormat){
@@ -51,7 +51,7 @@ function GetMovie (name,size,format,topping,total){
         default:
         console.log("error");
 }
-      let topping_value = pTopping.length * 100;
+      let reg_value = preg.length * 100;
 
       if((pFormat == "0") && (pTrending == "0")){
         $("button.proceed").show();
@@ -66,14 +66,14 @@ function GetMovie (name,size,format,topping,total){
         $("div.choice").slideDown(1200);
       }
     
-      total = price + c_price + topping_value;
+      total = price + c_price + reg_value;
       let checkoutTotal = 0;
       checkoutTotal = checkoutTotal + total;
 
       $("#Moviename").html($(".name option:selected").val());
       $("#Moviesize").html( $("#size option:selected").val());
       $("#Movieformat").html($("#format option:selected").val());
-      $("#Movietopping").html(pTopping.join(", "));
+      $("#Moviereg").html(preg.join(", "));
       $("#totals").html(total);
 
   $("button#checkout").click(function(){

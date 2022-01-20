@@ -138,7 +138,6 @@
                           <form action="">
                               <label for="select">Choose Your Favourite Movie</label>
                               <select class="browser-default custom-select custom-select-md mb-3 name" id="name">
-                                <option selected value="0">Choose your favourite movie</option>
                                 <option value="Ondine">Ondine</option>
                                 <option value="The Woman">The Woman</option>
                                 <option value="Icarus">Icarus</option>
@@ -148,34 +147,32 @@
                               </select>
                             <label for="select">Select The Format</label>
                             <select class="browser-default custom-select custom-select-md mb-3" id="size">
-                              <option selected value="0">Choose your favourite Format</option>
                               <option value="mp4">MP4. -- sh. 1200</option>
                               <option value="mov">MOV. -- sh. 900</option>
                               <option value="wmv">WMV. -- sh. 600</option>
                             </select>
                             <label for="format">Preview Trending Discount This Week</label>
                               <select class="browser-default custom-select custom-select-md mb-3" id="format">
-                                <option selected value="0">Preview Trending Discount This Week</option>
                                 <option value="Ondine">Ondine at sh. 40</option>
                                 <option value="Grind">Grind at sh. 40</option>
                                 <option value="The Woman">The Woman at sh. 40</option>
 
                               </select>
-                            <label for="Toppings">Tax at.. ksh 100 <span style="color: red">"Only jkmk is available in your area"</span></label><br>
+                            <label for="regs">Tax at.. ksh 100 <span style="color: red">Default: "Only jkmk is available in your area"</span></label><br>
                               <div class="custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" id="kfb" value="kfb" name="toppings">
+                                <input type="checkbox" class="custom-control-input" id="kfb" value="kfb" name="regs">
                                 <label class="custom-control-label" for="kfb">KFB</label>
                               </div>
                               <div class="custom-control custom-checkbox custom-control-inline">
-                                <input type="checkbox" class="custom-control-input" id="Universal" value="universal" name="toppings">
+                                <input type="checkbox" class="custom-control-input" id="Universal" value="universal" name="regs">
                                 <label class="custom-control-label" for="universal">Universal</label>
                               </div>
                               <div class="custom-control custom-checkbox custom-control-inline">
-                                  <input type="checkbox" class="custom-control-input" id="jkmk" value="jkmk" name="toppings">
+                                  <input type="checkbox" class="custom-control-input" id="jkmk" value="jkmk" name="regs" checked="checked">
                                   <label class="custom-control-label" for="jkmk">JKMK</label>
                               </div>
                               <div class="custom-control custom-checkbox custom-control-inline">
-                                  <input type="checkbox" class="custom-control-input" id="lmkn " value="lmkn" name="toppings">
+                                  <input type="checkbox" class="custom-control-input" id="lmkn " value="lmkn" name="regs">
                                   <label class="custom-control-label" for="lmkn">LMKN</label>
                                 </div>
 
@@ -206,7 +203,7 @@
                                     <td id="Moviename"></td>
                                     <td id="Moviesize"></td>
                                     <td id="Movieformat"></td>
-                                    <td id="Movietopping"></td>
+                                    <td id="Moviereg"></td>
                                     <td id="totals"></td>
                                   </tr>                  
                                 </tbody>
