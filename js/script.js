@@ -77,12 +77,6 @@ function GetMovie (name,size,format,reg,total){
       $("#totals").html(total);
 
   $("a#ccheckout").click(function(){
-<<<<<<< HEAD
-    $("a#ccheckout").show();
-    $("#Movietotal").append("Amount Paid: ksh. " +  checkoutTotal).show();
-    alert("Transaction Successful (:-")
-  })
-=======
     $("a#ccheckout").hide();
     $("a#stream").show();
     $(".wrapper").show();
@@ -96,12 +90,11 @@ function GetMovie (name,size,format,reg,total){
   })
 
 
->>>>>>> main
 
 
   
-  $("button#refresh").click(function(){
-    $("button#refresh").hide();
+  $("a#refresh").click(function(){
+    $("a#refresh").hide();
     location.reload();
 
   })
