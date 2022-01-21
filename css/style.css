@@ -1,0 +1,476 @@
+html,body,header,
+.landing {
+  overflow-x: hidden;
+  height: 100%;
+  scroll-behavior: smooth;
+
+}
+* {
+    font-family: sans-serif;
+}
+
+#overlay-home{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+#head{
+    padding-top: 10%;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h5 {
+    letter-spacing: 3px;
+}
+h1{
+    letter-spacing: 8px;
+    color:#8b0000;
+    font-weight: bolder;
+    font-family: 'Wallpoet';
+    font-size: 60px;
+    text-shadow: 2px 4px 5px yellow;
+}
+nav .navbar{
+    width: 99%;
+    padding-right: 0px;
+    transition: all 0.3s ease;
+    
+  }
+  .navbar-brand{
+    margin-right: 30%;
+    font-weight:800;
+  } white
+  .nav-item a{
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.nav-link {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+}
+.nav-link:hover{
+  background-color: #3cfa0c;
+  color: crimson;
+}
+.landing{
+    background-image: url("../asset/bg-home.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    padding-bottom: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+.text a{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+}
+.text h5{
+    font-size: 25px;
+    padding: 30px;
+}
+.button{
+    border-radius: 10px;
+}
+button {
+  background-color: crimson;
+
+}
+#slogan{
+    padding-top: 5%;
+}
+#slogan p{
+    text-align: center;
+    line-height: 30px;
+    color: blue;
+    font-size: 20px;
+}
+.card-title{
+    text-align: center;
+    color: black;
+    font-weight: 800;
+  }
+  .card {
+    height: 250px;
+    width: 300px;
+  }
+  .card-img-top{
+    height: 250px;
+    width: 300px;
+  }
+  .col-md-4{
+    border-radius: 10%;
+    padding: 10px;
+  }
+  .col-md-4:hover {
+    transform: scale(1.2);
+  }
+.carousel-inner {
+    background: crimson;
+}
+.order h4{
+  text-align: center;
+}
+#product{
+  padding-top: 30px;
+}
+.order{
+    background-attachment: fixed;
+    background-image: url("../asset/cashier");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 8%;
+    padding-bottom: 4%;
+  }
+  .order-overlay{
+    background-color: rgba(162, 162, 187, 0.9);
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 20px;
+    padding-left: 6%;
+    box-shadow: 0px 3px 6px ;
+  }
+  .order-overlay h4{
+    padding: 2%;
+  }
+  .choice{
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+#Movietotal {
+  color: #3cfa0c;
+  font-weight: 700;
+}
+  .delivery{
+    display: none;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  #contact h4{
+    text-align: center;
+    padding: 3% 0% 3% 0%;
+  }
+  #contact{
+    color: black;
+    background-color: #d9d9e2;
+  }
+  #contactdetails{
+    text-align: center;
+  }
+  #addedprice{
+    display: none;
+  }
+  #finallmessage{
+    display: none;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 28px;
+  }
+  #information{
+    padding-top: 5%;
+    font-size: 22px;
+    padding-right: 8%;
+    padding-left: 5%;
+    color: #8b0000;
+  }
+  td,th{
+    font-size: 20px;
+    color: white;
+  }
+  .choice h4{
+    color:#8b0000;
+    text-align: left;
+  }
+  #your-orders{
+    color: white;
+    font-size: 30px;
+  }
+  .d-flex{
+    display: flex !important;
+  }
+  .arrow
+  {
+    position: relative;
+    left: 50%;
+    top: 90%;
+    margin-left:-20px;
+    
+  }
+  .bounce {
+    animation: bounce 5s infinite;
+  }
+  .container-map {
+    margin-top: 6%;
+    text-align: center;
+    width: 100%;
+    background-color: #222;
+  } 
+   .container-map >  h4{
+     padding-top: 3%;
+    color: white;
+   }
+
+  .map{
+    height: 350px;
+    margin: 4%;
+
+  }
+
+  #icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 15%;
+    margin:-60px 0 0 -60px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+  }
+#billing {
+height: auto;
+width: 65%;
+text-align: center;
+margin: 4% 0% 2% 25%;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -6px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+th {
+    padding: 20px;
+}
+
+.container {
+  background-color: darkgrey;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+/*gallery*/
+.gallery {
+  height: 1400px;
+  width: auto;
+}
+.container{
+  background-color:grey;
+  color: white;
+  min-height: calc(100vh - 50px);
+}
+.content-container{
+  margin-left: 50px;
+}
+.featured-content{
+  height: 50vh;
+  padding: 50px;
+  background-image: url(asset/one.jpg);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: right;
+  align-items: center;
+}
+.featured-heading{
+  font-weight: 500;
+  align-items: center;
+}
+.featured-description{
+  width: 500px;
+  color: grey;
+  margin: 30px ,0;
+  padding-left: 70px;
+}
+.featured-button{
+  background-color: gold;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.featured-button :hover{
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateY(-1s);
+}
+.movie-list-container{
+  padding: 20px;
+}
+.movie-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 280px;
+  align-items: center;
+}
+.movie-list-item{
+  margin-right: 30px;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 200px;
+  background-color: red;
+  
+}
+.movie-list-item-img{
+  width: 200px;
+  height: 200px;
+  transition: all 1s;
+}
+.movie-list-item:hover .movie-list-item-img{
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+.movie-list-item-title{
+  background-color: black;
+  padding: 0px 10px;
+  font-size: 22px;
+  font-weight: 300;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+}
+.movie-list-item-desc{
+  background-color: black;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  width: 50px;
+  opacity: 0;
+
+}
+.movie-list-item-button{
+  padding: 20px;
+  margin: 40px;
+  background-color: gold;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  bottom: 20px;
+  left: 50px;
+  cursor: pointer;
+} 
+.movie-list-item:hover .movie-list-item-title{
+  opacity: 1;
+}
+.movie-list-item:hover .movie-list-item-desc{
+  opacity: 1;
+}
+.movie-list-item:hover .movie-list-item-button{
+  opacity: 1;
+}
+.containertwo{
+  background-color: black;
+  color: white;
+}
+.featured-content2{
+  height: 50vh;
+  padding: 50px;
+  background-image: url(asset/eleven.jpg);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: right;
+  align-items: center;
+}
+
