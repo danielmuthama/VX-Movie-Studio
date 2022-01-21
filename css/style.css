@@ -350,12 +350,14 @@ span.price {
 /*gallery*/
 .gallery {
   height: 1400px;
-  width: auto;
+  width: 100%;
 }
 .container{
   background-color:grey;
   color: white;
   min-height: calc(100vh - 50px);
+  width: 100%;
+
 }
 
 .content-container{
@@ -446,7 +448,7 @@ span.price {
 .movie-list-item-button{
   padding: 20px;
   margin: 60px;
-  background-color: gold;
+  background-color: darkgrey;
   color: white;
   border-radius: 10px;
   outline: none;
