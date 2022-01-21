@@ -482,13 +482,13 @@ span.price {
 .wrapper {
   display: none;
 }
-iframe{
+.wrapper > iframe{
   width: 180px;
   height:180px;
   object-fit: cover;
   margin: 20px;
 }
-iframe > #preview {
+#preview {
 width: 700px;
 height: 390px;
 }
