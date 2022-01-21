@@ -77,10 +77,19 @@ function GetMovie (name,size,format,reg,total){
       $("#totals").html(total);
 
   $("a#ccheckout").click(function(){
-    $("a#ccheckout").show();
+    $("a#ccheckout").hide();
+    $("a#stream").show();
+    $(".wrapper").show();
     $("#Movietotal").append("Amount Paid: ksh. " +  checkoutTotal).show();
-    alert("Transaction Successful (:-")
+    alert("Transaction Successful!!! You can now watch our movies...FEEL FREE")
   })
+  $("a#stream").click(function(){
+    $("a#stream").show();
+    $("#Movietotal").hide();
+
+  })
+
+
 
 
   
