@@ -357,6 +357,7 @@ span.price {
   color: white;
   min-height: calc(100vh - 50px);
 }
+
 .content-container{
   margin-left: 50px;
 }
@@ -399,20 +400,23 @@ span.price {
   grid-template-columns: repeat(4, 1fr);
   height: 280px;
   align-items: center;
+  justify-content: center;
 }
 .movie-list-item{
   margin-right: 30px;
   position: relative;
   width: auto;
   height: auto;
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 180px;
+  max-height: 180px;
   background-color: red;
+  object-fit: cover;
+
   
 }
 .movie-list-item-img{
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   transition: all 1s;
 }
 .movie-list-item:hover .movie-list-item-img{
@@ -441,7 +445,7 @@ span.price {
 }
 .movie-list-item-button{
   padding: 20px;
-  margin: 40px;
+  margin: 60px;
   background-color: gold;
   color: white;
   border-radius: 10px;
@@ -473,4 +477,26 @@ span.price {
   background-position: right;
   align-items: center;
 }
-
+.wrapper {
+  display: none;
+}
+iframe{
+  width: 180px;
+  height:180px;
+  object-fit: cover;
+  margin: 20px;
+}
+iframe > #preview {
+width: 700px;
+height: 390px;
+}
+#stream {
+  display: none;
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 70px;
+  background-color: red;
+  padding: 5% 5% 5% 5%;
+  border-radius: 50%;
+  text-decoration: none;
+}

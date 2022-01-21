@@ -50,7 +50,7 @@
                           <a class="btn btn-blue button floater" href="#order">  Order Now!</a>
                           <br />
                           <h4 class="featured-heading">This Week Preview</h4>
-                          <iframe width="700" height="390" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+                          <iframe id="preview" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
                         </div>
                       </div>
                     </div>
@@ -73,14 +73,17 @@
                     </p>
                     <button class="featured-button">Watch</button>
                 </div>
+                <br>
+                <br>
                 <div class="movie-list-container">
                     <h1 class="movie-list-title">New movies</h1>
                     <div class="movie-list-wrapper">
                         <div class="movie-list">
                             <div class="movie-list-item">
                                 <img class="movie-list-item-img"src="asset/two.jpg" alt="" >
-                                <span class="movie-list-item-title">TRIGGERED</span>
+                                <span class="movie-list-item-title">Triggered</span>
                                 <P class="movie-list-item-desc">DESCRIPTION</P>
+                  
                                 <a  href ="#order-now" class="movie-list-item-button">BUY</a>
                             </div>
                             <div class="movie-list-item">
@@ -141,10 +144,31 @@
                                             <P class="movie-list-item-desc">DESCRIPTION</P>
                                             <a href="#order-now" class="movie-list-item-button">BUY</a>
                                         </div>
+
                                         
                 </div>
             </div>
         </div>
+<section class="preview">
+  <h1>Preview Releases</h1>
+  <div class="wrapper" id= "wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ith2WetKXlg" title="YouTube video player" frameborder="img" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ltNMWNjB8GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SF0w2B6DNUE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vOUVVDWdXbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YLE85olJjp8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/CmRih_VtVAs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+       gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/AUN9IPMwEPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2KsYw96enww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+         gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 </section>
 <section class="order-now">
                     <div class="container-fluid order" id="order">
@@ -239,23 +263,13 @@
                               <p id="addedprice">Streaming will cost.... 200</p>
                               <p id="finallmessage"></p>
                             </div>
-                            <a class="btn btn-secondary bg-secondary pay" href="#expyear"id="pay">Pay Using</a>
                             <br>
-                            <button class ="btn btn-secondary bg-secondary" id="refresh">Clear Transaction</button>
+                            <a class="btnn" href="#wrapper"id="stream">Stream Now</a>
+                            <br>
+                            <br>
+                            <a class="btn btn-secondary bg-secondary pay" href="#expyear"id="pay">Pay Using</a>
+                            <a class ="btn btn-secondary bg-secondary" href="#order" id="refresh">Clear Transaction</a>
 
-                          </div>
-                          <div class="delivery"> 
-                              <form action="" id="form">
-                                <div class="form-group">
-                                  <input type="text" id="name" class="form-control mb-3" placeholder="Name">
-                                  <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
-                                  <input type="text" id="location" class="form-control mb-3" placeholder="Location">
-                                </div>
-                              </form>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
 </section>
 
 <section id="billing">
@@ -305,7 +319,7 @@
                   
                               <div class="row">
                                 <div class="col-50">
-                                  <label for="expyear">Exp Year <span style="color: red;" >*</span></label>
+                                  <label for="expyear">Exp Yr <span style="color: red;" >*</span></label>
                                   <input type="text" id="expyear" name="expyear" placeholder="2018">
                                 </div>
                                 <div class="col-50">
@@ -324,11 +338,7 @@
                           <p id="Movietotal"></p>
                         </form>
                       </div>
-                    </div>
-                  
-                    <div class="col-25">
-
-                    </div>
+                    </div>              
                   
 </section>
       <div class="container-fluid" id="contact">
@@ -354,7 +364,7 @@
     </div>
 
     
-    <div class=" col-md-3 arrow bounce"> <a href="contact/index.html" target="blank"> <img class="bounce" src="asset/whatsapp.png" alt=" arrow"width="70px"></a></div>
+    <div class=" col-md-3 arrow bounce"> <a href="contact/index.html" target="blank"> <img style="border-radius: 50% solid green;" class="bounce" src="asset/whatsapp.png" alt=" arrow"width="70px"></a></div>
   
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="https://js.paystack.co/v1/inline.js"></script>
