@@ -1,35 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="overlay-home">
-        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse align-items-center" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#overlay-home">Home</a>
-                  </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./">Gallery</a>
-                  </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#order">Order</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>    
-            </ul>
-          </div>  
-        </nav>
-      </div>
-    
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HOME page</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                      <!-- Link to add the whatsapp icon -->
+    <script src="https://kit.fontawesome.com/5185a2b2a1.js" crossorigin="anonymous"></script>
+                                            <!-- above link is for linking the code to my fontawesome.com account where i got the icons -->
+  </head>
+  <body>
+    <div class="hero">
+
+      <form onsubmit="event.preventDefault(); validateForm()">
+
+        <div class="row">
+
+          <div class="input-group">
+            <input type="text" id="name" required>
+            <label for="name"><i class="fas fa-align-left"></i>Your Name</label>
+            <!-- The <i class="fas fa-align-left"> is gotten from the fontawesome.com -->
+          </div>
+          <div class="input-group">
+            <input type="text" id="number" required>
+            <label for="number"><i class="fas fa-phone-square-alt"></i>Your Number</label>
+                <!-- The <i class="fas fa-phone-square-alt"> is gotten from the fontawesome.com -->
+          </div>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" required>
+          <label for="email"><i class="fas fa-envelope-open-text"></i> Your Email</label>
+        </div>
+        <!-- The <i class="fas fa-envelope-open-text"> is gotten from the fontawesome.com -->
+        <div class="input-group">
+          <textarea rows="8" id="message" required></textarea>
+          <label for="message"><i class="fas fa-comments"></i> Type your message here</label>
+        </div>
+          <!-- The <i class="fas fa-comments"> is gotten from the fontawesome.com -->
+        <button type="submit" name="submit" id = "button" onclick="formvalidation()"><i class="far fa-share-square"></i>SUBMIT</button>
+      </form>
+    </div>
+    <a href="https://wa.me/+254717305705" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+<!-- /Link to add the whatsApp icon/ -->
+    <script src="scripts.js"></script>
+  </body>
 </html>

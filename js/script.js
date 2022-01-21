@@ -55,7 +55,7 @@ function GetMovie (name,size,format,reg,total){
 
       if((pFormat == "0") && (pTrending == "0")){
         $("button.proceed").show();
-        $("#information").show();
+        $("#information").hide();
         $("div.choice").hide();
         alert("Please select the Movie size and format");
       }
@@ -76,46 +76,22 @@ function GetMovie (name,size,format,reg,total){
       $("#Moviereg").html(preg.join(", "));
       $("#totals").html(total);
 
-  $("button#checkout").click(function(){
-    $("button#checkout").hide();
-    $("button.addMovie").hide();
-    $("button#deliver").slideDown(1000);
-    $("#Movietotal").append("Your bill is ksh. " +  checkoutTotal);
-  })
-  $("button.deliver").click(function(){
-    $(".Movietable").hide();
-    $(".choice h2").hide();
-    $(".delivery").slideDown(1000);
-    $("#addedprice").hide();
-    $("button.deliver").hide();
-    $("#Movietotal").hide();
-
-    let deliveryAmount = checkoutTotal;
-    $("#totalbill").append("Your bill plus delivery fee is: "+ deliveryAmount);
+  $("a#ccheckout").click(function(){
+    $("a#ccheckout").show();
+    $("#Movietotal").append("Amount Paid: ksh. " +  checkoutTotal).show();
+    alert("Transaction Successful (:-")
   })
 
-  $("button#final-order").click(function(event){
-    event.preventDefault();
-    $("#Movietotal").hide();
-    $(".delivery").hide();
-    $("button#final-order").hide();
-    let deliceryAmount = checkoutTotal;
 
-    let person = $("input#name").val();
-    let phone = $("input#phone").val();
-    let location = $("input#location").val();
-
-    if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
-      $("#finallmessage").append(person+", We have received your request we will send the feedback at  "+location+ " ASAP. Please ensure you pay ksh. "+ deliceryAmount);
-      $("#totalbill").hide();
-      $("#finallmessage").slideDown(1200); 
-    }else{
-      alert("Please fill in the delivery details");
-      $(".delivery").show();
-      $("button#final-order").show();
-    }
+  
+  $("button#refresh").click(function(){
+    $("button#refresh").hide();
+    location.reload();
 
   })
-  event.preventDefault();
-  })
+
+
 })
+  })
+
+  
