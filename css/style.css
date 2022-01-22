@@ -45,7 +45,6 @@ nav .navbar{
   .nav-item a{
     font-size: 30px;
     font-weight: 700;
-
 }
 .nav-link {
   color: white;
@@ -86,34 +85,37 @@ button {
 #slogan{
     padding-top: 5%;
 }
-#slogan p{
-    text-align: center;
-    line-height: 30px;
-    color: blue;
-    font-size: 20px;
-}
+
 .card-title{
     text-align: center;
     color: black;
     font-weight: 800;
   }
-  .card {
+.card {
     height: 250px;
     width: 300px;
   }
-  .card-img-top{
+.card-img-top{
     height: 250px;
     width: 300px;
   }
-  .col-md-4{
+.col-md-4{
     border-radius: 10%;
     padding: 10px;
   }
-  .col-md-4:hover {
+.col-md-4:hover {
     transform: scale(1.2);
   }
 .carousel-inner {
     background: crimson;
+}
+.order-now {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 800px;
+
+
 }
 .order h4{
   text-align: center;
@@ -132,7 +134,7 @@ button {
     padding-bottom: 4%;
   }
   .order-overlay{
-    background-color: rgba(162, 162, 187, 0.9);
+    background-color: rgba(91, 94, 90, 0.7);
     margin-left: 2%;
     margin-right: 2%;
     padding-bottom: 20px;
@@ -167,16 +169,8 @@ button {
   #contactdetails{
     text-align: center;
   }
-  #addedprice{
-    display: none;
-  }
-  #finallmessage{
-    display: none;
-    padding-top: 10%;
-    padding-right: 10%;
-    padding-left: 10%;
-    font-size: 28px;
-  }
+
+
   #information{
     padding-top: 5%;
     font-size: 22px;
@@ -185,8 +179,9 @@ button {
     color: #8b0000;
   }
   td,th{
-    font-size: 20px;
+    font-size: 18px;
     color: white;
+    font-family: sans-serif;
   }
   .choice h4{
     color:#8b0000;
@@ -203,66 +198,42 @@ button {
   {
     position: relative;
     left: 50%;
-    top: 90%;
+    top: 80%;
     margin-left:-20px;
     
   }
-  .bounce {
-    animation: bounce 5s infinite;
+  #bounce {
+    border-radius: 50%;
+    border: 5px solid black;
   }
-  .container-map {
-    margin-top: 6%;
-    text-align: center;
-    width: 100%;
-    background-color: #222;
-  } 
-   .container-map >  h4{
-     padding-top: 3%;
-    color: white;
-   }
-
-  .map{
-    height: 350px;
-    margin: 4%;
-
+  #bounce:hover{
+    transform: scale(1.2);
   }
-
   #icon {
     position: absolute;
-    top: 50%;
     left: 50%;
-    padding-top: 15%;
+    padding-top: 5%;
     margin:-60px 0 0 -60px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
 }
 
-@-moz-keyframes spin { 
-    100% { -moz-transform: rotate(360deg); } 
-}
-@-webkit-keyframes spin { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-  }
-#billing {
+
+
+/*billing*/
+
+.billing {
+width: auto;
 height: auto;
-width: 65%;
-text-align: center;
-margin: 4% 0% 2% 25%;
+max-width: 100%;
+max-height: 1300px;
+margin: 2%;
 }
-
 .row {
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
   margin: 0 -6px;
+  justify-content: center;
 }
 
 .col-25 {
@@ -289,12 +260,23 @@ th {
     padding: 20px;
 }
 
-.container {
-  background-color: darkgrey;
+.billing > .container {
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
+  height: 85%;
+  width:  6%;
+  padding: 2%;
+  text-align: center;
 }
+.container > form {
+  height: 80%;
+  width: 60%;
+  padding: 2%;
+  background-color: rgba(70, 202, 37, 0.7);
+  margin-left: 20%;
+  }
+
 
 input[type=text] {
   width: 100%;
@@ -349,7 +331,7 @@ span.price {
 
 /*gallery*/
 .gallery {
-  height: 1400px;
+  height: auto;
   width: 100%;
 }
 .container{
@@ -357,7 +339,6 @@ span.price {
   color: white;
   min-height: calc(100vh - 50px);
   width: 100%;
-
 }
 
 .content-container{
@@ -378,12 +359,12 @@ span.price {
 }
 .featured-description{
   width: 500px;
-  color: black;
   background-color: blanchedalmond;
   margin: 30px;
   padding:7px 25px 7px 35px;
   border-radius: 5%;
-
+  color:#8b0000;
+  box-shadow: 0px 3px 12px green;
 }
 .featured-button{
   background-color: gold;
@@ -412,20 +393,18 @@ span.price {
   position: relative;
   width: auto;
   height: auto;
-  max-width: 180px;
-  max-height: 180px;
-  background-color: red;
+  max-width: 200px;
+  max-height: 200px;
+  background-color:darkgrey;
   object-fit: cover;
-
-  
 }
 .movie-list-item-img{
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   transition: all 1s;
 }
 .movie-list-item:hover .movie-list-item-img{
-  transform: scale(1.1);
+  transform: scale(1.2);
   opacity: 0.6;
 }
 .movie-list-item-title{
@@ -449,7 +428,7 @@ span.price {
 
 }
 .movie-list-item-button{
-  padding: 20px;
+  padding: 10px 12px 10px 12px;
   margin: 60px;
   background-color: darkgrey;
   color: white;
@@ -465,9 +444,10 @@ span.price {
 }
 .movie-list-item:hover .movie-list-item-desc{
   opacity: 1;
+  background-color: crimson;
 }
 .movie-list-item:hover .movie-list-item-button{
-  opacity: 1;
+  opacity: 0.9;
 }
 .containertwo{
   background-color: black;
@@ -476,7 +456,6 @@ span.price {
 .featured-content2{
   height: 50vh;
   padding: 50px;
-  background-image: url(asset/eleven.jpg);
   background-size: 400px;
   background-repeat: no-repeat;
   background-position: right;
@@ -486,10 +465,16 @@ span.price {
   display: none;
 }
 .wrapper > iframe{
-  width: 180px;
-  height:180px;
+  padding: 5px;
+  width: 195px;
+  height:195px;
   object-fit: cover;
   margin: 20px;
+  background-color: darkgrey;
+
+}
+.wrapper > iframe:hover {
+  transform: scale(1.4);
 }
 #preview {
 width: 700px;

@@ -89,14 +89,9 @@ function GetMovie (name,size,format,reg,total){
 
   })
 
-
-
-
-  
   $("a#refresh").click(function(){
     $("a#refresh").hide();
     location.reload();
-
   })
 
 

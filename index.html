@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="checkout.html">
     <script src="js/mdb.min.js"></script>
+    <script src="jquery.hoverplay.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -106,8 +107,11 @@
                             </div>
                         </div>
                     </div>
+                  </div>
+
                     <div class="containertwo">
                         <div class="content-container">
+
                             <div class="featured-content2">
                                 <h1 class="featured-heading">Deadshot</h1>
                                 <p class="featured-description">
@@ -116,6 +120,7 @@
                                 </p>
                                 <a href="#order-now" class="featured-button">Watch</a>
                             </div>
+
                             <div class="movie-list-container">
                                 <h1 class="movie-list-title" id="trend">Top Trending</h1>
                                 <div class="movie-list-wrapper">
@@ -143,16 +148,14 @@
                                             <span class="movie-list-item-title">Hubby Kuby</span>
                                             <P class="movie-list-item-desc">DESCRIPTION</P>
                                             <a href="#order-now" class="movie-list-item-button">BUY</a>
-                                        </div>
-
-                                        
-                </div>
-            </div>
-        </div>
-<section class="preview">
+                                        </div>                     
+                                  </div>
+                            </div>
+                        </div>
+  <div class="preview">
   <h1>Preview Releases</h1>
   <div class="wrapper" id= "wrapper">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/Ith2WetKXlg" title="YouTube video player" frameborder="img" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      <iframe id="video" controls autoplay width="560" height="315" src="https://www.youtube.com/embed/Ith2WetKXlg" title="YouTube video player" frameborder="img" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
       gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ltNMWNjB8GE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
       gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -169,7 +172,13 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/2KsYw96enww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
          gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </section>
+
 <section class="order-now">
                     <div class="container-fluid order" id="order">
                     <div class="order-overlay">
@@ -260,19 +269,20 @@
                               </table>
                               <p id="Movietotal"></p>
                               <p id="totalbill"></p> 
-                              <p id="addedprice">Streaming will cost.... 200</p>
                               <p id="finallmessage"></p>
                             </div>
                             <br>
                             <a class="btnn" href="#wrapper"id="stream">Stream Now</a>
                             <br>
                             <br>
-                            <a class="btn btn-secondary bg-secondary pay" href="#expyear"id="pay">Pay Using</a>
+                            <a class="btn btn-secondary bg-secondary pay" href="#expyear"id="pay">Pay</a>
                             <a class ="btn btn-secondary bg-secondary" href="#order" id="refresh">Clear Transaction</a>
-
+    </div>
+</div>
+</div>
 </section>
 
-<section id="billing">
+<section class="billing" id="billing">
                   <div class="row">
                     <div class="col-75">
                       <div class="container">
@@ -338,9 +348,11 @@
                           <p id="Movietotal"></p>
                         </form>
                       </div>
-                    </div>              
+                    </div> 
+                  </div>             
                   
 </section>
+<section class="contact">
       <div class="container-fluid" id="contact">
         <div class="controls-top "> 
             <h4><strong>CONTACT<strong</h4>
@@ -364,8 +376,11 @@
     </div>
 
     
-    <div class=" col-md-3 arrow bounce"> <a href="contact/index.html" target="blank"> <img style="border-radius: 50% solid green;" class="bounce" src="asset/whatsapp.png" alt=" arrow"width="70px"></a></div>
-  
+    <div class=" col-md-3 arrow bounce"> 
+      <a href="contact/index.html" target="blank"> 
+        <img id="bounce" src="asset/whatsapp.png" alt=" arrow"width="70px">
+      </a></div>
+    </section>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
 <script src="https://js.paystack.co/v1/inline.js"></script>
 <script src="js/script.js"></script>
