@@ -243,7 +243,7 @@
                                 <label class="custom-control-label" for="lmkn">LMKN</label>
                             </div>
 
-                            <button type="submit" class="btn btn-secondary bg-secondary proceed">Checkout</button>
+                            <button onClick="this.form.submit(); this.disabled=true; this.value='Sending…'; " type="submit" class="btn btn-secondary bg-secondary proceed">Checkout</button>
 
                         </form>
                     </div>
@@ -279,8 +279,8 @@
                             <a class="btnn" href="#wrapper" id="stream">Stream Now</a>
                             <br>
                             <br>
-                            <a class="btn btn-secondary bg-secondary pay" href="#expyear" id="pay">Pay</a>
-                            <a class="btn btn-secondary bg-secondary" href="#order" id="refresh">Clear Transaction</a>
+                            <a class="btn btn-secondary bg-secondary pay" href="#expyear" id="pay">PAY</a>
+                            <a class="btn btn-secondary bg-secondary" href="#order" id="refresh">RESET</a>
                         </div>
                     </div>
                 </div>
