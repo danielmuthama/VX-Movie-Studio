@@ -430,12 +430,12 @@ span.price {
 }
 .movie-list-item-title{
   background-color: black;
-  padding: 0px 10px;
+  padding: 0px 5px;
   font-size: 22px;
   font-weight: 300;
   position: absolute;
   top: 10%;
-  left: 50px;
+  left: 3%;
 }
 .movie-list-item-desc{
   background-color: black;
