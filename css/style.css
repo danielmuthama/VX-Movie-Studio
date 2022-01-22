@@ -347,7 +347,6 @@ span.price {
 .featured-content{
   height: 50vh;
   padding: 50px;
-  background-image: url(asset/one.jpg);
   background-size: 400px;
   background-repeat: no-repeat;
   background-position: right;
