@@ -93,6 +93,9 @@ $(document).ready(function() {
             $("a#refresh").hide();
             location.reload();
         })
+        $("a#pay").click(function() {
+            $("a#pay").hide();
+        })
 
 
     })
