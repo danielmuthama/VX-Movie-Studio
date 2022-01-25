@@ -26,28 +26,33 @@ $(document).ready(function() {
             case "0":
                 price = 0;
                 break;
-            case 'mp4':
+            case 'Movies_plan':
+                price = 1500;
+                break;
+            case "Series_plan":
+                price = 2500;
+                break;
+
+            case "Animations_plan":
                 price = 1200;
                 break;
-            case "mov":
-                price = 900;
-                break;
-            case "wmv":
-                price = 600;
+            case "All_Genre_plan":
+                price = 3500;
             default:
-                console.log("error");
+                console.log("error")
+                _
         }
 
         switch (pTrending) {
             case "0":
                 c_price = 0;
                 break;
-            case "Ondine":
+            case "Movie":
                 c_price = 40;
-            case "Grind":
-                c_price = 40;
-            case "The Woman":
-                c_price = 40;
+            case "Serie":
+                c_price = 30;
+            case "Animation":
+                c_price = 20;
             default:
                 console.log("error");
         }
@@ -89,9 +94,11 @@ $(document).ready(function() {
 
         })
 
+
+
         $("a#refresh").click(function() {
+            window.location.reload();
             $("a#refresh").hide();
-            location.reload();
         })
         $("a#pay").click(function() {
             $("a#pay").hide();
