@@ -45,7 +45,7 @@ $(document).ready(function() {
 
         switch (pTrending) {
             case "0":
-                c_price = 0;
+                c_price = 40;
                 break;
             case "Movie":
                 c_price = 40;
