@@ -49,15 +49,19 @@ $(document).ready(function() {
                 break;
             case "Movie":
                 c_price = 40;
+                break;
             case "Serie":
                 c_price = 40;
+                break;
             case "Animation":
+                c_price = 40;
+                break;
+            case "All_Genre":
                 c_price = 40;
             default:
                 console.log("error");
         }
         let reg_value = preg.length * 100;
-
         if ((pFormat == "0") && (pTrending == "0")) {
             $("button.proceed").show();
             $("#information").hide();
@@ -69,6 +73,7 @@ $(document).ready(function() {
             $("#information").hide();
             $("div.choice").slideDown(1200);
         }
+
 
         total = price + c_price + reg_value;
         let checkoutTotal = 0;
@@ -87,13 +92,41 @@ $(document).ready(function() {
             $("#Movietotal").append("Amount Paid: ksh. " + checkoutTotal).show();
             alert("Transaction Successful!!!")
         })
-        $("a#stream").click(function() {
-            $("a#stream").show();
-            $(".wrapper").show();
-            $("#Movietotal").hide();
 
-        })
+        if (checkoutTotal == 1640) {
+            $("a#stream").click(function() {
+                $("a#stream").show();
+                $(".wrapper-1").show();
+                $(".wrapper-2").hide();
+                $(".wrapper-3").hide();
+                $("#your-orders").hide();
+                $("#Movietotal").hide();
 
+            })
+        } else if (checkoutTotal == 2640) {
+            $("a#stream").click(function() {
+                $("a#stream").show();
+                $(".wrapper-1").hide();
+                $(".wrapper-2").show();
+                $(".wrapper-3").hide();
+                $("#your-orders").hide();
+                $("#Movietotal").hide();
+
+            })
+        } else if (checkoutTotal == 1340) {
+            $("a#stream").click(function() {
+                $("a#stream").show();
+                $(".wrapper-1").hide();
+                $(".wrapper-2").hide();
+                $("#your-orders").hide();
+                $(".wrapper-3").show();
+                $("#Movietotal").hide();
+
+            })
+
+        } else {
+            return false;
+        }
 
 
         $("a#refresh").click(function() {

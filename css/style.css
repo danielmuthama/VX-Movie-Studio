@@ -517,11 +517,15 @@
         align-items: center;
     }
     
-    .wrapper {
+    .wrapper-1,
+    .wrapper-2,
+    .wrapper-3 {
         display: none;
     }
     
-    .wrapper>iframe {
+    .wrapper-1>iframe,
+    .wrapper-2>iframe,
+    .wrapper-3>iframe {
         padding: 5px;
         width: 195px;
         height: 195px;
@@ -530,7 +534,9 @@
         background-color: darkgrey;
     }
     
-    .wrapper>iframe:hover {
+    .wrapper-1>iframe:hover,
+    .wrapper-2>iframe:hover,
+    .wrapper-3>iframe:hover {
         transform: scale(1.4);
     }
     
