@@ -50,9 +50,9 @@ $(document).ready(function() {
             case "Movie":
                 c_price = 40;
             case "Serie":
-                c_price = 30;
+                c_price = 40;
             case "Animation":
-                c_price = 20;
+                c_price = 40;
             default:
                 console.log("error");
         }
